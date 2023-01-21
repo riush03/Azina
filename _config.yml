@@ -2,13 +2,13 @@
 title: CSU Fresno Recycling Trashcan Locations
 email: csaba.toth.us@gmail.com
 description: The locations of recycling trashcans around the campus.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://riush03.github.io/NairobiParkingSpots/" # the base hostname & protocol for your site
+baseurl: "NairobiParkingSpots/" # the subpath of your site, e.g. /blog/
+url: "https://riush03.github.io/" # the base hostname & protocol for your site
 copyright: '&copy; 2021 Csaba Toth'
 
 # Website Links
 fresnostategeology: "https://www.fresnostate.edu/csm/ees/"
-website_source_repo: "https://github.com/RecyclingTrashCans/RecyclingTrashCans.github.io"
+website_source_repo: "https://github.com/riush03/NairobiParkingSpots/tree/master"
 website_issues: https://github.com/RecyclingTrashCans/RecyclingTrashCans.github.io/issues/
 
 # Build settings
