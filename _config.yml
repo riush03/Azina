@@ -2,8 +2,8 @@
 title: Nairobi County Parking Spots
 email: dennzriush@gmail.com
 description: The locations of parking spots in Nairobi county.
-baseurl: "/feed/" # the subpath of your site, e.g. /blog/
-url: "https://riush03.github.io/" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://riush03.github.io/NairobiParkingSpots/" # the base hostname & protocol for your site
 copyright: '&copy; 2023 Nairobi Parking SPots'
 
 # Website Links
