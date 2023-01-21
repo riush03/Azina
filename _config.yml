@@ -1,14 +1,14 @@
 # Site settings
-title: Nairobi County Parking Spots
-email: dennzriush@gmail.com
-description: The locations of parking spots in Nairobi county.
-baseurl: "NairobiParkingSpots/" # the subpath of your site, e.g. /blog/
-url: "https://riush03.github.io/" # the base hostname & protocol for your site
-copyright: '&copy; 2023 Nairobi Parking SPots'
+title: CSU Fresno Recycling Trashcan Locations
+email: csaba.toth.us@gmail.com
+description: The locations of recycling trashcans around the campus.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://riush03.github.io/NairobiParkingSpots/" # the base hostname & protocol for your site
+copyright: '&copy; 2021 Csaba Toth'
 
 # Website Links
 fresnostategeology: "https://www.fresnostate.edu/csm/ees/"
-website_source_repo: "https://github.com/riush03/NairobiParkingSpots/tree/master"
+website_source_repo: "https://github.com/RecyclingTrashCans/RecyclingTrashCans.github.io"
 website_issues: https://github.com/RecyclingTrashCans/RecyclingTrashCans.github.io/issues/
 
 # Build settings
@@ -25,7 +25,7 @@ play_store_url: https://play.google.com/store/apps/details?id=dev.csaba.armap.re
 
 # Google Analytics account ID (UA-XXXXXXXX-X)
 google-analytics-ua: UA-86563829-9
-gmaps_yo: "AIzaSyBVUOUvXejHVT140LQGzyWZIOGprpHUi34"
+gmaps_yo: "AIzaSyBm7DK2d-zrF1zOOEyDpoMyLiUWwrAROuk"
 main_map:
-  lat: -1.3162479
-  lon: 36.7567452
+  lat: 36.814079
+  lon: -119.7442877
