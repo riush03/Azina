@@ -1,0 +1,25 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string-array name="csu_fresno">
+    {% for post in site.posts %}
+      <item>{{ post.lat }}|{{ post.lon }}|{{ post.title }}|trashcan|{{ post.url | absolute_url }}</item>
+    {% endfor %}
+    {% assign areas = site.data.areas | where:"kind", "builtin" %}
+    {% for area in areas %}
+      {% for loc in area.locations %}
+        <item>{{ loc.lat }}|{{ loc.lon }}|{{ loc.title }}|{{ loc.kind }}|{{ loc.url }}</item>
+      {% endfor %}
+    {% endfor %}
+  </string-array>
+  {% assign areas = site.data.areas | where:"kind", "extra" %}
+  {% for area in areas %}
+    <string-array name="{{ area.title }}">
+      {% for loc in area.locations %}
+        <item>{{ loc.lat }}|{{ loc.lon }}|{{ loc.title }}|{{ loc.kind }}|{{ site.url | absolute_url }}</item>
+      {% endfor %}
+    </string-array>
+  {% endfor %}
+</resources>

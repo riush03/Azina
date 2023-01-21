@@ -1,0 +1,31 @@
+# Site settings
+title: Nairobi County Parking Spots
+email: dennzriush@gmail.com
+description: The locations of parking spots in Nairobi county.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://recyclingtrashcans.github.io/" # the base hostname & protocol for your site
+copyright: '&copy; 2021 Csaba Toth'
+
+# Website Links
+fresnostategeology: "https://www.fresnostate.edu/csm/ees/"
+website_source_repo: "https://github.com/RecyclingTrashCans/RecyclingTrashCans.github.io"
+website_issues: https://github.com/RecyclingTrashCans/RecyclingTrashCans.github.io/issues/
+
+# Build settings
+markdown: kramdown
+
+# Custom theme could be generated at: https://getmdl.io/customize/index.html
+material_theme: red-indigo
+
+# Android AR Map app
+application_name: Recycling Trashcan ARMap
+app_source_repo: "https://github.com/RecyclingTrashCans/recycling-trashcan-armap"
+app_issues: https://github.com/RecyclingTrashCans/recycling-trashcan-armap/issues/
+play_store_url: https://play.google.com/store/apps/details?id=dev.csaba.armap.recyclingtrashcans
+
+# Google Analytics account ID (UA-XXXXXXXX-X)
+google-analytics-ua: UA-86563829-9
+gmaps_yo: "AIzaSyBVUOUvXejHVT140LQGzyWZIOGprpHUi34"
+main_map:
+  lat: -1.3162479
+  lon: 36.7567452

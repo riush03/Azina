@@ -1,0 +1,21 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string-array name="csu_fresno">
+    {% for post in site.posts %}
+      <item>{{ post.lat }},{{ post.lon }},{{ post.title }},{{ post.url | absolute_url }},trashcan</item>
+    {% endfor %}
+    {% assign csu_fresno = site.data.csu_fresno %}
+    {% for loc in csu_fresno %}
+      <item>{{ loc.lat }},{{ loc.lon }},{{ loc.title }},{{ loc.url }},{{ loc.kind }}</item>
+    {% endfor %}
+  </string-array>
+  <string-array name="park_ridge">
+    {% assign park_ridge = site.data.park_ridge %}
+    {% for loc in park_ridge %}
+      <item>{{ loc.lat }},{{ loc.lon }},{{ loc.title }},{{ site.url | absolute_url }},{{ loc.kind }}</item>
+    {% endfor %}
+  </string-array>
+</resources>

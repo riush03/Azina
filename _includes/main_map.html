@@ -1,0 +1,69 @@
+<script type="text/javascript">
+  function initMap() {
+    var trashCanLocations = [
+    {% for post in site.posts %}
+      ["{{post.title}}", {{post.lat}}, {{post.lon}}, "{{post.url}}", "trashcan"],
+    {% endfor %}
+    ];
+    var poiLocations = [
+    {% assign csu_fresno = site.data.csu_fresno %}
+    {% for loc in csu_fresno %}
+      ["{{loc.title}}", {{loc.lat}}, {{loc.lon}}, "{{loc.url}}", "poi"],
+    {% endfor %}
+    ];
+
+    var wrapper = document.getElementById("content-wrapper");
+    var mapWidth = wrapper.clientWidth
+    var zoomLevel = mapWidth < 900 ? (mapWidth < 500 ? 16 : 17) : 18;
+    var map = new google.maps.Map(document.getElementById('map'), {
+      center: new google.maps.LatLng({{site.main_map.lat}}, {{site.main_map.lon}}),
+      zoom: zoomLevel,
+      disableDefaultUI: false,
+      mapTypeId: google.maps.MapTypeId.HYBRID
+    });
+
+    var infowindow = new google.maps.InfoWindow();
+
+    var marker, i;
+
+    for (i = 0; i < poiLocations.length; i++) {  
+      marker = new google.maps.Marker({
+        position: new google.maps.LatLng(poiLocations[i][1], poiLocations[i][2]),
+        map: map
+      });
+
+      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+          infowindow.setContent("<a href='" + poiLocations[i][3] + "'>" + poiLocations[i][0] + "</a>");
+          infowindow.open(map, marker);
+        }
+      })(marker, i));
+    }
+
+    const svgMarker = {
+      path: "m 17.615479,3.4439781 c 0.517921,0.094161 1.082931,0.5650103 1.365436,0.9416782 l 4.567144,7.9101067 -2.3542,1.412517 h 7.81594 l 3.907967,-6.7800906 -2.401283,1.365437 -2.40128,-4.2375578 C 27.879783,3.6323143 27.408944,3.4439781 26.891019,3.4439781 Z M 15.14532,3.9177598 c -1.277735,-0.010084 -2.560471,0.4369991 -3.08575,1.3624913 l -3.578379,6.2621699 6.874257,4.002131 4.37881,-7.6275996 -1.742106,-2.9192056 C 17.396243,4.2914897 16.272728,3.9266625 15.14532,3.9177598 Z m 18.384538,9.6963522 -6.921341,3.955052 4.378808,7.48635 h 3.719632 c 1.506686,-0.282501 3.766718,-2.730869 2.448364,-5.273403 z m -30.6516574,1.64794 2.4954483,1.459602 -1.6008534,2.683785 c -1.4125173,2.6367 0.9416781,5.544136 2.3541954,5.697158 H 9.799538 l 2.495453,-4.331721 2.495449,1.365432 -4.002137,-6.874256 z m 22.4590494,8.051356 -4.002138,6.874259 4.002138,6.827175 V 34.14272 h 4.896732 c 0.565007,0 0.941679,-0.329589 1.130015,-0.706262 l 4.425893,-7.815934 c -0.235421,0.141249 -0.376674,0.376668 -1.271269,0.470838 H 25.33725 Z M 4.9969749,25.714691 c 0.1883363,0.235418 0.1412637,0.188341 4.2846431,7.533434 0.282501,0.423755 0.659173,0.94168 1.1771,0.894595 h 8.804698 V 26.091362 H 6.1740757 c -0.7062586,0 -0.9534517,-0.188338 -1.1771008,-0.376671 z",
+      fillColor: "green",
+      fillOpacity: 1.0,
+      strokeColor: "yellow",
+      strokeWeight: 1,
+      rotation: 0,
+      scale: 1,
+      anchor: new google.maps.Point(12, 12),
+    };
+
+    for (i = 0; i < trashCanLocations.length; i++) {  
+      marker = new google.maps.Marker({
+        position: new google.maps.LatLng(trashCanLocations[i][1], trashCanLocations[i][2]),
+        icon: svgMarker,
+        map: map
+      });
+
+      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+          infowindow.setContent("<a href='" + trashCanLocations[i][3] + "'>" + trashCanLocations[i][0] + "</a>");
+          infowindow.open(map, marker);
+        }
+      })(marker, i));
+    }
+  }
+</script>
