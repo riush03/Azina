@@ -1,63 +1,44 @@
-- title: csu_fresno
+- title: nairobi_county
   kind: builtin
   locations:
-  - title: Downing Planetarium
-    lat: 36.81453746188452
-    lon: -119.7443145115619
-    url: https://www.google.com/maps/place/Downing+Planetarium/@36.814618,-119.7447596,178m/data=!3m1!1e3!4m5!3m4!1s0x80945d025240386b:0x79c0f8e688186ef0!8m2!3d36.8145788!4d-119.7444601
+  - title: Holy Family Basilica Parking
+    lat: -1.2878473
+    lon: 36.8194021
+    url: https://www.google.com/maps/place/Holy+Family+Basilica+Parking/@-1.2878473,36.8194021,179m/data=!3m2!1e3!4b1!4m5!3m4!1s0x182f10d9fdf12cdd:0xcbad6a7cb2fe9683!8m2!3d-1.287849!4d36.8199456
     kind: poi
-  - title: Science 1 Building
-    lat: 36.8135372500964
-    lon: -119.743789544877
-    url: https://www.google.com/maps/place/CSU+Fresno+Science+1/@36.81409,-119.7445186,267m/data=!3m1!1e3!4m5!3m4!1s0x80945d0215a2e3e1:0xf6265ab06dab5b82!8m2!3d36.813543!4d-119.743951
+  - title: Lutheran parking lot
+    lat: -1.2809439
+    lon: 36.8150151
+    url: https://www.google.com/maps/place/Lutheran+parking+lot/@-1.2809439,36.8150151,450m/data=!3m1!1e3!4m5!3m4!1s0x182f10d270e32b21:0xc408612e83bdcbb1!8m2!3d-1.2823992!4d36.814582
     kind: poi
-  - title: Science 2 Building
-    lat: 36.81467314229451
-    lon: -119.7433513894873
-    url: http://maps.google.com/maps?q=36.81467314229451,-119.7433513894873
+  - title: NCPB Parking Lot
+    lat: -1.2973731
+    lon: 36.8348257
+    url: https://www.google.com/maps/@-1.2973731,36.8348257,222m/data=!3m1!1e3
     kind: poi
-  - title: Satellite Student Union
-    lat: 36.81349091038875
-    lon: -119.74524200131582
-    url: https://www.google.com/maps/place/Satellite+Student+Union/@36.8133735,-119.7456316,133m/data=!3m1!1e3!4m5!3m4!1s0x80945d023591f559:0x6943b12d59515c33!8m2!3d36.8133983!4d-119.7452437
+  - title: Nyati House Parking Lot
+    lat: -1.2836105
+    lon: 36.8167892
+    url: https://www.google.com/maps/place/Nyati+House+Parking+Lot/@-1.2836105,36.8167892,275m/data=!3m1!1e3!4m5!3m4!1s0x182f10d3d626af2b:0xd0de94c592c41aa9!8m2!3d-1.2836568!4d36.8172508
     kind: poi
-  - title: P5/P6 Parking Lot
-    lat: 36.81317126765784
-    lon: -119.7418656443854
-    url: https://www.google.com/maps/place/P5%2FP6/@36.8134544,-119.7428465,200m/data=!3m1!1e3!4m5!3m4!1s0x0:0x3172ee1dc6fb1c37!8m2!3d36.813225!4d-119.7416512
+  - title: Parking Space
+    lat: -1.2728182
+    lon: 36.8067863
+    url: https://www.google.com/maps/place/Parking+Space/@-1.2728182,36.8067863,219m/data=!3m1!1e3!4m5!3m4!1s0x182f1737720d3ba5:0x6553d8589d3c03d1!8m2!3d-1.2729092!4d36.8068224
     kind: poi
-- title: park_ridge
+- title: other_parking_spots
   kind: extra
   locations:
-  - title: Entrance 1
-    lat: 36.862358
-    lon: -119.793572
+  - title: GPO Parking Lot
+    lat: -1.2855241
+    lon: 36.8165533
     kind: poi
-  - title: Exit
-    lat: 36.862463
-    lon: -119.793611
+  - title: kenyatta ave
+    lat: -1.2849872
+    lon: 36.818409
     kind: poi
-  - title: Entrance 2
-    lat: 36.862909
-    lon: -119.793780
+  - title: Koinange st
+    lat: -1.2840163
+    lon: 36.8184081
     kind: poi
-  - title: Office
-    lat: 36.862490
-    lon: -119.793228
-    kind: trashcan
-  - title: Fitness
-    lat: 36.862388
-    lon: -119.793080
-    kind: trashcan
-  - title: Pool
-    lat: 36.862404
-    lon: -119.793008
-    kind: trashcan
-  - title: Trashcan
-    lat: 36.861838
-    lon: -119.793128
-    kind: trashcan
-  - title: Mailboxes
-    lat: 36.861642
-    lon: -119.793181
-    kind: trashcan
+ 
